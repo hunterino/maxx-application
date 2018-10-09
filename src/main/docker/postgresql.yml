@@ -1,0 +1,11 @@
+version: '2'
+services:
+    maxxapplication-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/maxxApplication/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=maxxApplication
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
